@@ -5,8 +5,32 @@
     color: #fff;
 }
 
+.pageIntro {
+    background-color: #0f0f0f;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0.7rem;
+    justify-content: center;
+}
+
+.pageIntro .intro {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: white;
+}
+
+.pageIntro .resume {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ED0A3F;
+    margin-top: 0.5rem;
+}
+
 .main_page {
-    background-color: black;
+    background-color: #0f0f0f;
     width: 100%;
     min-height: 100vh;
     padding: 0.5rem 0.75rem;
@@ -24,7 +48,7 @@
 }
 
 .edu {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -66,11 +90,12 @@
 }
 
 .card {
-    background: #232323;
+    background: #1a1a1a;
     padding: 1rem;
     border-radius: 20px;
     width: 100%;
     box-shadow: 0 0 10px white(0.3);
+    color: #e0e0e0;
 }
 
 .card:hover {
@@ -78,9 +103,9 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.card:hover .s2{
-   color: #02caf6; 
-   transition: color 0.3s ease-in;
+.card:hover .s2 {
+    color: #02caf6;
+    transition: color 0.3s ease-in;
 }
 
 .card p {
@@ -108,7 +133,7 @@
 }
 
 .skill_container .skill {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
@@ -120,8 +145,8 @@
 }
 
 .p_lan {
-    color: #ED0A3F;
-} 
+    color: #FF69B4;
+}
 
 .prg_lan {
     display: grid;
@@ -139,10 +164,11 @@
     border-radius: 20px;
     font-size: 1.2rem;
     width: 200px;
-    min-height: 100px; 
+    min-height: 100px;
     transition: transform 0.3s;
-    background-color: #232323;
+    background-color: #1a1a1a;
     z-index: 1;
+    color: #e0e0e0;
 }
 
 .scard:hover {
@@ -157,7 +183,7 @@
 .scard:hover p {
     /* color: #02caf6;  */
     color: white;
-   transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .scard span {
@@ -174,7 +200,24 @@
 .scard:hover span {
     color: #ED0A3F;
     transition: font-size 0.4s, color 0.4s;
-    transform: scale(1.5);   
+    transform: scale(1.5);
 }
 
+.tool_container {
+    margin-top: 2rem;
+    /* padding: 2rem 2rem; */
+}
 
+.tool {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    margin-top: 3rem;
+}
+
+.tool_title {
+    font-size: 2rem;
+    margin-top: 1.7rem;
+    color: #FF69B4;
+    padding: 0.5rem 0.75rem;
+}
