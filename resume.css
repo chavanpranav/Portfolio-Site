@@ -8,7 +8,7 @@
 .main_page {
     background-color: black;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0.5rem 0.75rem;
 }
 
@@ -20,6 +20,7 @@
     padding: 2rem;
     color: white;
     text-align: center;
+    /* background-color: #121212; */
 }
 
 .edu {
@@ -65,11 +66,21 @@
 }
 
 .card {
-    background: #1a1a1a;
+    background: #232323;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(255, 74, 87, 0.3);
+    box-shadow: 0 0 10px white(0.3);
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #ED0A3F;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .s2{
+   color: #02caf6; 
+   transition: color 0.3s ease-in;
 }
 
 .card p {
@@ -88,3 +99,82 @@
 .card .s1 {
     margin-right: 4.5rem;
 }
+
+.skill_container {
+    margin-top: 2rem;
+    padding: 2rem;
+    /* text-align: center; */
+    /* background-color: #121212; */
+}
+
+.skill_container .skill {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skill_container .p_lan {
+    margin-top: 1.7rem;
+    font-size: 2rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.p_lan {
+    color: #ED0A3F;
+} 
+
+.prg_lan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.scard {
+    /* border: 2px solid wheat; */
+    padding: 1rem;
+    text-align: center;
+    /* word-break: break-word; */
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 200px;
+    min-height: 100px; 
+    transition: transform 0.3s;
+    background-color: #232323;
+    z-index: 1;
+}
+
+.scard:hover {
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px #ED0A3F;
+}
+
+.scard p {
+    font-size: 1.5rem;
+}
+
+.scard:hover p {
+    /* color: #02caf6;  */
+    color: white;
+   transition: color 0.3s ease-in-out;
+}
+
+.scard span {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.scard i {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.scard:hover i,
+.scard:hover span {
+    color: #ED0A3F;
+    transition: font-size 0.4s, color 0.4s;
+    transform: scale(1.5);   
+}
+
+
