@@ -80,7 +80,7 @@ main {
 .cv_btn {
     padding: 10px 20px;
     background-color: #ED0A3F; 
-    color: white;
+    /* color: white; */
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -90,7 +90,18 @@ main {
     margin-top: 2rem;
 }
 
-.cv_btn:hover {
+.cv_btn a {
+    color: white;
+    background-color: #ED0A3F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cv_btn a:hover {
+    background-color: #c70934; 
+}
+
+.cv_btn:hover{
     background-color: #c70934; 
 }
 
@@ -107,4 +118,8 @@ main {
     .aboutme_img {
         height: auto;
     }
+}
+
+.self_info .p1 span {
+    color: #ED0A3F;
 }
