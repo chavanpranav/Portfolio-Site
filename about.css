@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.intro {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: white;
+}
+
+.aboutme_heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ED0A3F;
+    margin-top: 0.5rem;
+}
+
+header {
+    /* background-color: #0f0f0f; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0.7rem;
+    justify-content: center;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    gap: 30px;
+    margin: 30px;
+}
+
+.aboutme_img {
+    height: 500px;
+    width: 400px;
+}
+
+.aboutme_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.main_container {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    margin-top: 20px;
+    /* border: 2px solid white; */
+}
+
+.main_container .self_info .p0{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.main_container .self_info .p1{
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.main_container .self_info .p2{
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: 25px;
+}
+
+.cv_btn {
+    padding: 10px 20px;
+    background-color: #ED0A3F; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 2rem;
+}
+
+.cv_btn:hover {
+    background-color: #c70934; 
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutme_img, .main_container {
+        width: 90%;
+    }
+
+    .aboutme_img {
+        height: auto;
+    }
+}
