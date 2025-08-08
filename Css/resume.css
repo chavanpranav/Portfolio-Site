@@ -8,7 +8,7 @@
 .pageIntro {
     background-color: #0f0f0f;
     height: 100px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -31,14 +31,14 @@
 
 .main_page {
     background-color: #0f0f0f;
-    width: 100%;
+    /* width: 100%; */
     min-height: 100vh;
     padding: 0.5rem 0.75rem;
 }
 
 .education_container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     justify-items: center;
     gap: 1rem;
     padding: 2rem;
@@ -74,10 +74,11 @@
 
 .edu_box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
     gap: 5rem;
     width: 95%;
     margin-top: 1.7rem;
+    margin-right: 2rem;
 }
 
 .card {
