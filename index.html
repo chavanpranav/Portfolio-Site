@@ -24,10 +24,30 @@
 </head>
 
 <body>
-    <video autoplay muted loop playsinline class="bg-video">
+
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <!-- <video autoplay muted loop playsinline class="bg-video">
         <source src="Assets/v4.mp4" type="video/mp4">
         Your browser does not support the video tag.
+    </video> -->
+    
+    <video 
+    class="bg-video"
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    preload="auto"
+    poster="Assets/fallback.jpg"
+    >
+        <source src="Assets/v4.mp4" type="video/mp4">
     </video>
+
     <div class="main_page">
         <div class="nav_bar">
             <div class="logo">
@@ -52,13 +72,16 @@
             </div>
             <div class="social_menu">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/pranav-chavan-94b4ba333/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/pranav-chavan-94b4ba333/"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/chavanpranav"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/pranav__chavan?igsh=eXRoem1laml1dTI="><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/pranav__chavan?igsh=eXRoem1laml1dTI="><i
+                                class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
+    <script src="./Js/loader.js"></script>
 </body>
 
 </html>
