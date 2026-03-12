@@ -120,6 +120,9 @@
 .skill_container {
     margin-top: 2rem;
     padding: 2rem;
+    display: grid;
+    /* gap: 50px; */
+    /* margin-top: 0.5rem; */
 }
 
 .skill_container .skill {
@@ -129,9 +132,10 @@
 }
 
 .skill_container .p_lan {
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     font-size: 2rem;
     padding: 0.5rem 0.75rem;
+    text-align: left;
 }
 
 .p_lan {
@@ -158,6 +162,10 @@
     background-color: #1a1a1a;
     z-index: 1;
     color: #e0e0e0;
+    display: inline-block;
+    /* flex: 1; */
+    margin: 0.5rem;
+
 }
 
 .scard:hover {
@@ -191,20 +199,30 @@
     transform: scale(1.5);
 }
 
-.tool_container {
-    margin-top: 2rem;
-}
+/* .tool_container {
+    margin-top: 0.5rem;
+    padding: 2rem;
+} */
 
-.tool {
+/* .tool {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
-    margin-top: 3rem;
-}
+    margin-top: 0.5rem;
+} */
 
 .tool_title {
     font-size: 2rem;
     margin-top: 1.7rem;
     color: #FF69B4;
     padding: 0.5rem 0.75rem;
+    
+}
+
+.cardBlock {
+    
+    /* display: flex;
+    justify-content: space-between; // equal distance between cards 
+    align-items: center;
+    gap: 20px; */
 }
